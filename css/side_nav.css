@@ -1,0 +1,46 @@
+.page_wrapper{
+    position: relative;
+    transition: 0.8s;
+}
+
+.main_container{
+    transition: 0.8s;
+    position: absolute;
+    width: 100%;
+}
+
+/* Side nav */
+.side_nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+    font-family: "Open Sans";
+    box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+    transition: 0.8s;
+    left:0;
+    top:0;
+}
+
+.side_nav .vertical_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side_nav .vertical_menu ul li {
+    list-style: none;
+}
+
+.side_nav .vertical_menu ul li a{
+    font-size: 0.8em;
+    color: #777;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-top: solid 1px #ddd;
+    text-transform: uppercase;
+    font-family: "Open Sans Regular";
+}

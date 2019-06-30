@@ -1,0 +1,42 @@
+.bg-blue{
+    background-color: #0088CC;
+}
+
+.header ul li a{
+    color: white !important;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+
+.header .menu_center .block_search input{
+    background-color: #fff;
+    color: #8d8d8d;
+    border-radius: 20px;
+    border: 1px solid #dbe0e2;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    height: 40px;
+    padding: 15px;
+    width: 450px;
+}
+
+.header {
+    /* padding: 1.5em 0; */
+
+}
+.horizontal_menu{
+    background-color: #F4F4F4;
+}
+.horizontal_menu ul{
+    padding: 10px 0;
+}
+.horizontal_menu ul li{
+    display: inline-block;
+    line-height: 0.8em;
+}
+
+.horizontal_menu ul li a{
+    font-weight: bold;
+    font-family: "Open Sans Regular";
+    font-size: 12px;
+}

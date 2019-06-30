@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <!-- CSS customer -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/side_nav.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main_product.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="stylesheet" href="./css/section.css">
+
+
+    <!-- Google font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.map"></script>
+
+
+
+    <!-- JS customer -->
+    <script src="./js/side_nav.js"></script>
+    <script src="./js/main_product.js"></script>
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb281ad047.js"></script>
+
+
+    <!-- Jquery -->
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="page_wrapper" id="pageWrapper">
+        <div class="side_nav" id="sideNav">
+            <div class="text-right">
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="vertical_menu">
+                <ul>
+                    <li><a onclick="closeSideNav()">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Special Offer!</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main_container" id="mainContainer">
+            <nav class="navbar navbar-expand-lg navbar-light bg-blue nav_bar" id="navBar">
+                <div class="container header">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse menu_center" id="">
+                        <form class="form-inline my-2 my-lg-0 m-auto block_search">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+
+                    <i class="fab fa-apple ic_w fa-2x"></i>
+
+                    <button class="navbar-toggler" id="navbarToggler" type="button" onclick="openSideNav()"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+            </nav>
+            <div class="horizontal_menu">
+                <div class="container">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Special Offer!</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main_content">
+                <div class="container">
+                    <div class="section setion_product">
+                        <div class="row">
+                            <div class="section_title text-center">
+                                <h1>Our Products</h1>
+                                <div class="section_describe">
+                                    <i>- Featured Products -</i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row"> -->
+                        <div class="section_content">
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                        aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="row main_product ">
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_01-600x600.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_01-600x600.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_01-600x600.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_01-600x600.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row main_product ">
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_07-300x300.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_07-300x300.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_07-300x300.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_07-300x300.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="row main_product ">
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_08-150x150.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_08-150x150.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_08-150x150.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3 product_block">
+                                            <div class="product_content">
+                                                <img class="product_img" src="./images/product_08-150x150.jpg" alt=""
+                                                    width="100%">
+                                                <div class="product_name">
+                                                    Lemon Hand Sanitizer
+                                                </div>
+                                                <div class="product_price">
+                                                    $3.00
+                                                </div>
+                                                <div class="product_button_group" id="productButtonGroup">
+                                                    <ul>
+                                                        <li class="product_search" data-toggle="modal"
+                                                            data-target="#exampleModalCenter">
+                                                            <span>
+                                                                <i class="fas fa-search"></i>
+                                                            </span>
+
+
+                                                        </li>
+                                                        <li class="product_card">
+                                                            <span href="">
+                                                                <i class="fas fa-cart-arrow-down"></i>
+                                                            </span>
+                                                        </li>
+                                                        <li class="product_save">
+                                                            <span href="">
+                                                                <i class="fas fa-heart"></i>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal
+                                                                title
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="row">
+                                                                        <div class="text-center" width="100%">
+                                                                            <img class="product_img"
+                                                                                src="./images/product_01-600x600.jpg"
+                                                                                alt="" width="60%">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="text-center" width="100%">
+                                                                                <img class="product_img"
+                                                                                    src="./images/product_01-600x600.jpg"
+                                                                                    alt="" width="60%">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Repudiandae, libero iusto veniam harum voluptas
+                                                                        doloribus
+                                                                        ipsa
+                                                                        quam quis cumque aut eum ea. Aliquid eum fuga
+                                                                        sequi quae
+                                                                        porro
+                                                                        sapiente assumenda?
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="footer-ribbon"> <span>Ribbon Text</span></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="bottom_header">
+                                Contact Information
+                            </div>
+
+                            <div class="bottom_main">
+                                <div class="bottom_block">
+                                    <div class="bottom_title">
+                                        Address
+                                    </div>
+                                    <div class="bottom_content">
+                                        123 Street Name, City, England
+                                    </div>
+                                </div>
+
+                                <div class="bottom_block">
+                                    <div class="bottom_title">
+                                        Phone
+                                    </div>
+                                    <div class="bottom_content">
+                                        (123) 456-7890
+                                    </div>
+                                </div>
+
+                                <div class="bottom_block">
+                                    <div class="bottom_title">
+                                        EMAIL
+                                    </div>
+                                    <div class="bottom_content">
+                                        mail@example.com
+                                    </div>
+                                </div>
+
+                                <div class="bottom_block">
+                                    <div class="bottom_title">
+                                        WORKING DAYS/HOURS
+                                    </div>
+                                    <div class="bottom_content">
+                                        Mon - Sun / 9:00AM - 8:00PM
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="row ">
+                                <div class="col-md-6">
+                                    <div class="bottom_header">
+                                        Be the first to know
+                                    </div>
+                                    <div class="bottom_block">
+                                        <div class="bottom_content">
+                                            Get all the latest information on Events, Sales and Offers.
+                                            Sign up for newsletter today.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="form-control form-control-lg" type="text"
+                                        placeholder=".form-control-lg">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="block_bottom">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="bottom_header">
+                                                    MY ACCOUNT
+                                                </div>
+
+                                                <ul>
+                                                    <li><a href="">About us</a></li>
+                                                    <li><a href="">Contact us</a></li>
+                                                    <li><a href="">My Account</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="bottom_header">
+                                                    MY ACCOUNT
+                                                </div>
+
+                                                <ul>
+                                                    <li><a href="">Order history</a></li>
+                                                    <li><a href="">Advanced search</a></li>
+                                                    <li><a href="">Login</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="bottom_header">
+                                                    MY ACCOUNT
+                                                </div>
+
+                                                <ul>
+                                                    <li><a href="">About us</a></li>
+                                                    <li><a href="">Contact us</a></li>
+                                                    <li><a href="">My Account</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="bottom_header">
+                                                    MY ACCOUNT
+                                                </div>
+
+                                                <ul>
+                                                    <li><a href="">About us</a></li>
+                                                    <li><a href="">Contact us</a></li>
+                                                    <li><a href="">My Account</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="bottom_bottom">
+                                <address>© Porto eCommerce. 2019. All Rights Reserved</address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- Refer: -->
+<!-- https://www.portotheme.com/magento2/porto/demo4_en -->
+<!-- https://learncssgrid.com/ -->
+<!-- https://preview.themeforest.net/item/organie-an-organic-store-farm-cake-flower-shop-woocommerce-theme/full_screen_preview/18777939?_ga=2.3932464.1081589239.1561886829-635904285.1561566597 -->
+<!-- https://codyhouse.co/gem/css-product-quick-view/ -->
