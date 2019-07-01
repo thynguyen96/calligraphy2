@@ -1,0 +1,42 @@
+.product_quickview_title{
+    color: #21293c;
+font-weight: 600;
+font-size: 1.5rem;
+letter-spacing: -.01em;
+}
+.product_quickview_describe{
+font-size: 14px;
+border-bottom: 1px solid #dae2e6;
+color: #7a7d82;
+padding-bottom: 20px;
+font-family: "Open Sans",sans-serif;
+}
+
+.product_quickview{
+    margin-bottom: 15px;
+}
+
+.product_quickview_price{
+    color: #08c;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.product_review li{
+    display: inline-block;
+}
+.product_review li i{
+    /* color: yellow; */
+}
+
+.quality_purchase{
+    display: inline-block;
+}
+.quality_purchase input{
+    width: 10px;
+}
+
+.quality_purchase ul li{
+    display: inline-block;
+}
