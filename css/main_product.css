@@ -16,6 +16,7 @@
 
 .main_product .product_content .product_name{
     padding: 0 50px;
+    transition: all 1s ease;
 }
 
 
@@ -45,11 +46,33 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     width: 100%;
     visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.main_product .product_content:hover .product_button_group{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.main_product .product_content:hover .product_name{
+    color: #6A903A;
+}
+
+.product_img{
+    transition: all 1s ease;
 }
 .main_product .product_content:hover .product_img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+
+/* .main_product .product_content:hover .product_img{
     animation: image_down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .main_product .product_content:hover {
@@ -102,6 +125,6 @@
     to{
         opacity: 0.5;
     } 
-}
+} */
 
 
