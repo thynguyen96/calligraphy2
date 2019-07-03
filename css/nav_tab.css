@@ -1,0 +1,7 @@
+.nav_tabs{
+    border: none;
+}
+
+.nav_tabs ul li a{
+    border-color: none;
+}
